@@ -4,7 +4,7 @@ from models.user import User
 
 
 class TestUser:
-    def setup(self):
+    def setup_method(self):
         self.user = User('user_name')
 
     def test_edit_name(self):
