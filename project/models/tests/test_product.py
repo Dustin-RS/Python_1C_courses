@@ -2,7 +2,7 @@ from models.product import Product
 
 
 class TestProduct:
-    def setup(self):
+    def setup_method(self):
         self.product = Product('Prod1', 'hard', 10)
 
     def test_edit_category(self):

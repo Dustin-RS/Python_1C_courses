@@ -6,7 +6,7 @@ from models.comment import Comment
 
 
 class TestComment:
-    def setup(self):
+    def setup_method(self):
         self.uuid = uuid.uuid4()
         self.comment = Comment(self.uuid, 'comment_text')
 
